@@ -11,17 +11,19 @@ namespace CosmicBagel
         public float lookSensitivity = 1.724f;
 
         // Start is called before the first frame update
-        void Start()
+        public void Start()
         {
+            Debug.Log("Player controller start");
 #if !UNITY_EDITOR
             Cursor.lockState = CursorLockMode.Locked;
 #endif
         }
 
         // Update is called once per frame
-        void Update()
+        public void Update()
         {
 #if UNITY_EDITOR
+
             // hack to stop taking input in editor when cursor is visible
             if (Input.GetMouseButtonDown(0))
             {
@@ -32,7 +34,6 @@ namespace CosmicBagel
                 Cursor.lockState = CursorLockMode.None;
             }
 #endif
-
             if (Cursor.lockState == CursorLockMode.Locked)
             {
                 transform.RotateAround(transform.position, Vector3.up,
@@ -52,7 +53,7 @@ namespace CosmicBagel
 
             moveVec = transform.rotation * moveVec;
 
-            transform.position += moveVec * Time.deltaTime * moveSpeed;
+            transform.position += moveSpeed * Time.deltaTime * moveVec;
         }
     }
 }
