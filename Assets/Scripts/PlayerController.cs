@@ -23,7 +23,6 @@ namespace CosmicBagel
         public void Update()
         {
 #if UNITY_EDITOR
-
             // hack to stop taking input in editor when cursor is visible
             if (Input.GetMouseButtonDown(0))
             {
@@ -36,11 +35,14 @@ namespace CosmicBagel
 #endif
             if (Cursor.lockState == CursorLockMode.Locked)
             {
-                transform.RotateAround(transform.position, Vector3.up,
-                        Input.GetAxis("Mouse X") * lookSensitivity);
-                mainCamera.transform.RotateAround(mainCamera.transform.position,
-                        mainCamera.transform.right, -Input.GetAxis("Mouse Y") *
-                        lookSensitivity);
+                transform.RotateAround(
+                        transform.position,
+                        Vector3.up,
+                        Input.GetAxisRaw("Mouse X") * lookSensitivity);
+                mainCamera.transform.RotateAround(
+                        mainCamera.transform.position,
+                        mainCamera.transform.right,
+                        -Input.GetAxisRaw("Mouse Y") * lookSensitivity);
             }
 
             Vector3 moveVec = Vector3.zero;
