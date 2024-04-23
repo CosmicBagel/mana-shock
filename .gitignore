@@ -4,6 +4,7 @@ Logs/
 Temp/
 UserSettings/
 obj/
+builds/
 
 *.csproj
 *.sln
