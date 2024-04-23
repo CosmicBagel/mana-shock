@@ -35,6 +35,33 @@ There are many lost people from your city in the castle.
 There is a language barrier, but it can be bridged with a companion, later you
 can learn the language if you desire to
 
+## story beats
+
+- player comes across more creatures like the companion creature, there is some
+drama about your friend helping you, the creature seems to be exiled for his
+actions
+
+- player defeats the big bad wizard
+
+- a survivor becomes big bad number 2, insisting that humanity uses this new
+found magic to benefit humanity
+
+- friendly mana ghost plays the part of the natural order, says mana was never
+meant to be used as it is now
+
+- the friendly mana ghost shows the player a vision of what will happen to
+humanity if mana is brought to the modern world
+
+- ending: player brings mana to the modern world, lives happily ever after, but
+dooming the future of the human race to corruption. The mana is a boon to
+civilization at first, cancer is cured, the merging of computers and magic
+creates new machines that benefit humanity immensely, but in time, humanity
+suffers the same fate as the castle dwellers. This is worse, since humanity
+takes to the stars, and soon the whole galaxy is inflicted with mana lust
+
+- ending: player destroys the mana well in the castle, humanity lives on their
+natural life
+
 ---
 
 Copyright CosmicBagel 2024

@@ -8,8 +8,12 @@ That is to say, this is an immersive sim, and expects a certain level of effort
 from the player
 
 - The game is played from the first-person perspective
-  - Melee combat will be an element, but will not be the focus of the combat
-  as FPS melee combat is notoriously difficult to get right
+  - Melee combat will be an element, but will not be the focus of the combat as
+  FPS melee combat is notoriously difficult to get right
+
+- The game can not be paused, and by default the player can not choose to load
+a save (only continue where left off). Robust auto save is necessary.
+Optionally the player can enable traditional saving and loading.
 
 - Early on the player will find a companion, a faerie creature from another
 world. This companion will help explain things to the player, but only at the
@@ -37,8 +41,21 @@ teaching the player the game.
   staff, not an incomprehensible labyrinth (or at least it once had a large
   staff)
 
-- Player does have 'stats' but they're not numbers that go up forever, rather
-each stat has five tiers (crippled, inept, capable, excellent, god-like)
+- Stats
+  - Stat values: crippled, inept, capable, excellent, god-like
+  - Strength
+  - Intelligence
+  - Mana capacity
+  - Constitution (health)
+  - Endurance
+  - Mental durability
+  - Speed
+  - Dexterity
+  - At the start of the game the player pick 2 to be 'capable' at, all other
+  stats are 'inept'
+  - Most likely what these stats are, and what they do will change a lot
+  - Player does have 'stats' but they're not numbers that go up forever, rather
+  each stat has five tiers (crippled, inept, capable, excellent, god-like)
   - Without magic augmentation it is not possible to achieve a god-like stat,
   and even then the effects are usually temporary
   - Most of the character's stats will be inept, with a few chosen stats
@@ -47,6 +64,10 @@ each stat has five tiers (crippled, inept, capable, excellent, god-like)
   must unlock it through certain quests or milestones
   - These stats can be affected by ailments like exhaustion, which can cripple
   intelligence and strength
+  - Optionally players can choose to have all stats 'inept', this should be a
+  fully possible play through
+  - The intent of stats is that being capable in any one will open up certain
+  gameplay possibilities and conveniences
 
 - Exhaustion: There is no hunger or thirst the player must manage, but the
 character does need to sleep from time to time.
@@ -145,6 +166,19 @@ character does need to sleep from time to time.
     - Completing the game on new game+ will reveal a new room with a completed
     anti-spell, and ramblings of a mad man discussing his forbidden area of
     research
+
+- Timeline progression
+  - When the player hits certain milestones, a timeline progression will be
+  triggered
+  - Progressions cause the *effects* of certain events in the world, but we
+  don't actually simulate the event fully, just apply the consequences if
+  possible
+  - It important to remember that the player has very few restrictions, so
+  timeline progressions need to be applied carefully, especially in areas where
+  it is likely the player has been and changed the state of the world. Keep in
+  mind that persistence of corpses, items, and state is critical to the
+  gameplay, so we don't want to undo any of the player's actions (unless it is
+  to prevent soft locking the player's progression)
 
 ---
 
