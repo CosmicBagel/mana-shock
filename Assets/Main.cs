@@ -1,17 +1,19 @@
 using UnityEngine;
 
-public class Main : MonoBehaviour
+namespace CosmicBagel
 {
-    // Start is called before the first frame update
-    public void Start()
+    public class Main : MonoBehaviour
     {
-        Debug.Log("hi");
+        // Start is called before the first frame update
+        public void Start()
+        {
+            Debug.Log("hi");
+        }
 
-    }
+        // Update is called once per frame
+        public void Update()
+        {
 
-    // Update is called once per frame
-    public void Update()
-    {
-
+        }
     }
 }
