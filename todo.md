@@ -3,6 +3,7 @@
 - goal: unlock upper floor
   - break the seal on the door(can not be locked picked)
   - find magic key to break the seal
+  - companion might mention help if asked
 
 - wandering enemy
 - baseball bat, attack,
@@ -14,6 +15,7 @@
 - sleep
 - move objects
 - keys
+- companion text
 
 ## maybe
 - sneak
