@@ -69,7 +69,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 7562023443685444193}
-  moveSpeed: 2
+  moveSpeed: 4.5
   lookSensitivity: 1.742
 --- !u!54 &3573083107021763775
 Rigidbody:

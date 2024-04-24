@@ -5,7 +5,7 @@ namespace CosmicBagel
     public class PlayerController : MonoBehaviour
     {
         public Camera mainCamera;
-        public float moveSpeed = 2.0f;
+        public float moveSpeed = 4.5f;
         // tuned this to my fav mouse sens
         // my aprox 800dpi mouse moving about 27.5cm gives 360 degree spin
         public float lookSensitivity = 1.724f;
